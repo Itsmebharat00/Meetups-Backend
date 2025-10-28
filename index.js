@@ -2,7 +2,7 @@
 
 const { initializingDatabase } = require("./db/db.connect");
 initializingDatabase();
-const MeetUp = require("./models/Meetup.models");
+const MeetUp = require("./models/meetup.models");
 const express = require("express");
 const app = express();
 app.use(express.json());
