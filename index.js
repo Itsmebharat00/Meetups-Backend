@@ -15,7 +15,7 @@ const webDevelopment = {
   startTime: new Date("2025-11-10T18:30:00Z"),
   endTime: new Date("2025-11-10T20:00:00Z"),
   location: "Online (Zoom Webinar) & 456 Dev Street, Silicon Valley",
-  eventType: "Hybrid",
+  eventType: "Both",
   description:
     "A deep dive into the latest trends in front-end frameworks, serverless architecture, and AI integration in modern web applications. Join us for insightful talks and a networking session.",
   speakers: [
