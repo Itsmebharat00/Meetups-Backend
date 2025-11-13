@@ -12,8 +12,8 @@ app.use(cors());
 const webDevelopment = {
   title: "Future of Web Development",
   hostedBy: "Tech Innovators Collective",
-  startTime: new Date("2025-11-10T18:30:00Z"),
-  endTime: new Date("2025-11-10T20:00:00Z"),
+  startTime: "10 Nov 2025, 6:30 PM",
+  endTime: "10 Nov 2025, 8:00 PM",
   location: "Online (Zoom Webinar) & 456 Dev Street, Silicon Valley",
   eventType: "Hybrid",
   description:
@@ -36,8 +36,8 @@ const webDevelopment = {
 const techConference = {
   title: "Tech Conference",
   hostedBy: "InnovateX Group",
-  startTime: new Date("2023-07-13T07:00:00+05:30"),
-  endTime: new Date("2023-07-13T10:00:00+05:30"),
+  startTime: "13 Jul 2023, 7:00 AM",
+  endTime: "13 Jul 2023, 10:00 AM",
   location: "123 Business Center, Mumbai, India",
   eventType: "Offline",
   description:
@@ -60,8 +60,8 @@ const techConference = {
 const designWorkshop = {
   title: "Design Workshop",
   hostedBy: "Creative Minds Studio",
-  startTime: new Date("2023-07-10T14:00:00+05:30"),
-  endTime: new Date("2023-07-10T16:00:00+05:30"),
+  startTime: "10 Jul 2023, 2:00 PM",
+  endTime: "10 Jul 2023, 4:00 PM",
   location: "456 Design Hub, Pune, India",
   eventType: "Offline",
   description:
@@ -83,8 +83,8 @@ const designWorkshop = {
 const marketingSeminar = {
   title: "Marketing Seminar",
   hostedBy: "Brand Builders Co.",
-  startTime: new Date("2023-08-15T10:00:00+05:30"),
-  endTime: new Date("2023-08-15T12:00:00+05:30"),
+  startTime: "15 Aug 2023, 10:00 AM",
+  endTime: "15 Aug 2023, 12:00 PM",
   location: "789 Corporate Plaza, Delhi, India",
   eventType: "Offline",
   description:
@@ -106,8 +106,8 @@ const marketingSeminar = {
 const entrepreneurshipMeetup = {
   title: "Entrepreneurship Meetup",
   hostedBy: "Startup Connect India",
-  startTime: new Date("2023-09-05T11:00:00+05:30"),
-  endTime: new Date("2023-09-05T13:00:00+05:30"),
+  startTime: "5 Sep 2023, 11:00 AM",
+  endTime: "5 Sep 2023, 1:00 PM",
   location: "Online Event",
   eventType: "Online",
   description:
@@ -129,8 +129,8 @@ const entrepreneurshipMeetup = {
 const dataScienceWebinar = {
   title: "Data Science Webinar",
   hostedBy: "AI Analytics Group",
-  startTime: new Date("2023-09-20T17:00:00+05:30"),
-  endTime: new Date("2023-09-20T18:30:00+05:30"),
+  startTime: "20 Sep 2023, 5:00 PM",
+  endTime: "20 Sep 2023, 6:30 PM",
   location: "Online (Zoom Webinar)",
   eventType: "Online",
   description:
@@ -149,8 +149,8 @@ const dataScienceWebinar = {
 const photographyMeetup = {
   title: "Photography Meetup",
   hostedBy: "Lens Lovers Community",
-  startTime: new Date("2023-09-25T09:00:00+05:30"),
-  endTime: new Date("2023-09-25T12:00:00+05:30"),
+  startTime: "25 Sep 2023, 9:00 AM",
+  endTime: "25 Sep 2023, 12:00 PM",
   location: "Marine Drive, Mumbai",
   eventType: "Offline",
   description:
@@ -169,9 +169,9 @@ const photographyMeetup = {
     "https://filmphotographyproject.com/wp-content/uploads/2024/10/BeersCameras_Ohio_770x430_.jpg",
 };
 
-async function createMeetups(meetUpData) {
+async function createMeetups(data) {
   try {
-    const meetUp = new MeetUp(meetUpData);
+    const meetUp = new MeetUp(data);
     const meetUpSave = await meetUp.save();
     console.log("New Meet up Data:", meetUpSave);
   } catch (error) {
@@ -179,13 +179,13 @@ async function createMeetups(meetUpData) {
   }
 }
 
-// createMeetups(webDevelopment);
-// createMeetups(techConference);
-// createMeetups(designWorkshop);
-// createMeetups(marketingSeminar);
-// createMeetups(entrepreneurshipMeetup);
-// createMeetups(dataScienceWebinar);
-// createMeetups(photographyMeetup);
+createMeetups(webDevelopment);
+createMeetups(techConference);
+createMeetups(designWorkshop);
+createMeetups(marketingSeminar);
+createMeetups(entrepreneurshipMeetup);
+createMeetups(dataScienceWebinar);
+createMeetups(photographyMeetup);
 
 async function readAllEvents() {
   try {
