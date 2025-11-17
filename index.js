@@ -17,7 +17,7 @@ const webDevelopment = {
   location: "Online (Zoom Webinar) & 456 Dev Street, Silicon Valley",
   eventType: "Hybrid",
   description:
-    "Explore the next decade of web development including advanced front-end frameworks, serverless computing, AI-powered development tools, WebAssembly, real-time applications, and how modern engineers can adopt future-proof skills.",
+    "A deep dive into the latest trends in front-end frameworks, serverless architecture, and AI integration in modern web applications,This session will explore real-world case studies of companies using modern stacks to scale rapidly and efficiently.Attendees will learn best practices for writing maintainable code, optimizing performance, and adopting next-generation tooling. Whether you're a beginner or an experienced developer, this session will provide valuable insights into where the industry is heading in the next five years.",
   speakers: [
     {
       name: "Alex Chen (Senior Full Stack Developer)",
@@ -50,7 +50,7 @@ const techConference = {
   location: "123 Business Center, Mumbai, India",
   eventType: "Offline",
   description:
-    "A premium technology conference bringing together leaders in software, AI, cloud, and cybersecurity. This event features keynote sessions, case studies, innovation showcases, and networking with top industry experts.",
+    "Join top industry leaders and developers to explore the latest advancements in technology, software development, and digital transformation.This conference brings together innovators from diverse domains to share their expertise on cloud computing, cybersecurity, and scalable architecture Attendees will participate in interactive sessions, hands-on demos, and panel discussions with experts shaping the future of tech. This event offers a unique opportunity to network, learn, and stay ahead in the rapidly evolving digital world.",
   speakers: [
     {
       name: "Ravi Mehta (CTO, InnovateX)",
@@ -83,7 +83,7 @@ const designWorkshop = {
   location: "456 Design Hub, Pune, India",
   eventType: "Offline",
   description:
-    "A hands-on workshop covering user-centered design, Figma prototyping, UI/UX fundamentals, color psychology, typography rules, and practical design sprints suitable for beginners and intermediate designers.",
+    "A hands-on workshop for UX/UI enthusiasts focusing on design thinking, wireframing, and user-centered design techniques. Participants will learn how to translate user needs into intuitive interfaces through practical exercises and group activities.The workshop covers modern prototyping tools, usability testing methods, and the fundamentals of building consistent design systems.Whether you're a designer, developer, or beginner, this session will help sharpen your creativity and problem-solving skills.",
   speakers: [
     {
       name: "Anjali Kapoor (Lead UX Designer)",
@@ -112,7 +112,7 @@ const marketingSeminar = {
   location: "789 Corporate Plaza, Delhi, India",
   eventType: "Offline",
   description:
-    "Discover cutting-edge marketing strategies, social media storytelling, brand positioning techniques, consumer psychology insights, and growth-hacking formulas used by top marketing professionals worldwide.",
+    "Learn the latest marketing strategies, from social media growth to data-driven branding and storytelling.This seminar covers how top brands use consumer psychology, analytics, and creative campaigns to capture attention in competitive markets.Attendees will understand how to plan effective marketing funnels, create powerful brand identities, and execute successful outreach strategies. Perfect for professionals, aspiring marketers, and business owners who want to take their marketing skills to the next level.",
   speakers: [
     {
       name: "Priya Desai (Marketing Strategist)",
@@ -141,7 +141,7 @@ const entrepreneurshipMeetup = {
   location: "Online Event",
   eventType: "Online",
   description:
-    "An interactive networking meetup for aspiring entrepreneurs focusing on startup ideation, funding knowledge, pitch preparation, and real-world growth stories from seasoned founders.",
+    "An interactive session for aspiring entrepreneurs to network, share ideas, and learn from successful startup founders.The meetup covers essential topics such as validating business ideas, building MVPs, securing funding, and forming strong teams. Participants will also hear real-world experiences about overcoming failures, scaling startups, and navigating challenges in the Indian startup ecosystem.This event provides a supportive environment for collaboration, inspiration, and meaningful connections.",
   speakers: [
     {
       name: "Karan Malhotra (Startup Mentor)",
@@ -170,7 +170,7 @@ const dataScienceWebinar = {
   location: "Online (Zoom Webinar)",
   eventType: "Online",
   description:
-    "A deep explanation of predictive analytics, machine learning workflow, model evaluation, best practices for data visualization, and the future of AI decision-making in industries.",
+    "A session covering the essentials of data visualization, predictive analytics, and the future of AI in decision-making.Experts will walk through techniques used in modern data science workflows, including feature engineering, model training, and evaluation.Attendees will gain clarity on how organizations leverage machine learning to enhance productivity and make smarter decisions. The webinar is suitable for beginners as well as professionals who want to strengthen their understanding of AI-driven insights.",
   speakers: [
     {
       name: "Neha Patel (Data Scientist)",
@@ -199,7 +199,8 @@ const photographyMeetup = {
   location: "Marine Drive, Mumbai",
   eventType: "Offline",
   description:
-    "A photography walk featuring composition techniques, lighting knowledge, street photography tips, and real-time guidance from professional photographers. Perfect for beginners and intermediate photographers.",
+    "Join fellow photographers for a city photo walk and sharing session to improve your street photography and composition skills.The meetup encourages creativity through guided challenges, live critiques, and hands-on practice with natural lighting.Participants will learn techniques for capturing candid moments, framing visually engaging shots, and editing images for professional results.Whether you're a hobbyist or an experienced photographer, this event promises an inspiring and collaborative experience.",
+
   speakers: [
     {
       name: "Arjun Menon (Professional Photographer)",
