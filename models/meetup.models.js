@@ -33,7 +33,12 @@ const MeetUpSchema = new mongoose.Schema(
       required: true,
     },
     speakers: {
-      type: [String],
+      type: [
+        {
+          name: { type: String },
+          image: { type: String },
+        },
+      ],
       required: true,
     },
     price: {

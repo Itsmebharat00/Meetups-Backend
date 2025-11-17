@@ -17,11 +17,20 @@ const webDevelopment = {
   location: "Online (Zoom Webinar) & 456 Dev Street, Silicon Valley",
   eventType: "Hybrid",
   description:
-    "A deep dive into the latest trends in front-end frameworks, serverless architecture, and AI integration in modern web applications. Join us for insightful talks and a networking session.",
+    "Explore the next decade of web development including advanced front-end frameworks, serverless computing, AI-powered development tools, WebAssembly, real-time applications, and how modern engineers can adopt future-proof skills.",
   speakers: [
-    "Alex Chen (Senior Full Stack Developer)",
-    "Maria Rodriguez (Cloud Architect)",
-    "Samir Khan (AI/ML Engineer)",
+    {
+      name: "Alex Chen (Senior Full Stack Developer)",
+      image: "https://randomuser.me/api/portraits/men/12.jpg",
+    },
+    {
+      name: "Maria Rodriguez (Cloud Architect)",
+      image: "https://randomuser.me/api/portraits/women/26.jpg",
+    },
+    {
+      name: "Samir Khan (AI/ML Engineer)",
+      image: "https://randomuser.me/api/portraits/men/33.jpg",
+    },
   ],
   price: 15,
   min: 0,
@@ -41,11 +50,20 @@ const techConference = {
   location: "123 Business Center, Mumbai, India",
   eventType: "Offline",
   description:
-    "Join top industry leaders and developers to explore the latest advancements in technology, software development, and digital transformation.",
+    "A premium technology conference bringing together leaders in software, AI, cloud, and cybersecurity. This event features keynote sessions, case studies, innovation showcases, and networking with top industry experts.",
   speakers: [
-    "Ravi Mehta (CTO, InnovateX)",
-    "Sophia Lin (Tech Strategist)",
-    "Daniel Brooks (Software Architect)",
+    {
+      name: "Ravi Mehta (CTO, InnovateX)",
+      image: "https://randomuser.me/api/portraits/men/32.jpg",
+    },
+    {
+      name: "Sophia Lin (Tech Strategist)",
+      image: "https://randomuser.me/api/portraits/women/45.jpg",
+    },
+    {
+      name: "Daniel Brooks (Software Architect)",
+      image: "https://randomuser.me/api/portraits/men/58.jpg",
+    },
   ],
   price: 30,
   min: 0,
@@ -65,10 +83,16 @@ const designWorkshop = {
   location: "456 Design Hub, Pune, India",
   eventType: "Offline",
   description:
-    "A hands-on workshop for UX/UI enthusiasts focusing on design thinking, wireframing, and user-centered design techniques.",
+    "A hands-on workshop covering user-centered design, Figma prototyping, UI/UX fundamentals, color psychology, typography rules, and practical design sprints suitable for beginners and intermediate designers.",
   speakers: [
-    "Anjali Kapoor (Lead UX Designer)",
-    "Michael Tan (Product Designer)",
+    {
+      name: "Anjali Kapoor (Lead UX Designer)",
+      image: "https://randomuser.me/api/portraits/women/18.jpg",
+    },
+    {
+      name: "Michael Tan (Product Designer)",
+      image: "https://randomuser.me/api/portraits/men/61.jpg",
+    },
   ],
   price: 20,
   min: 0,
@@ -88,10 +112,16 @@ const marketingSeminar = {
   location: "789 Corporate Plaza, Delhi, India",
   eventType: "Offline",
   description:
-    "Learn the latest marketing strategies, from social media growth to data-driven branding and storytelling.",
+    "Discover cutting-edge marketing strategies, social media storytelling, brand positioning techniques, consumer psychology insights, and growth-hacking formulas used by top marketing professionals worldwide.",
   speakers: [
-    "Priya Desai (Marketing Strategist)",
-    "John Evans (Brand Consultant)",
+    {
+      name: "Priya Desai (Marketing Strategist)",
+      image: "https://randomuser.me/api/portraits/women/33.jpg",
+    },
+    {
+      name: "John Evans (Brand Consultant)",
+      image: "https://randomuser.me/api/portraits/men/21.jpg",
+    },
   ],
   price: 25,
   min: 0,
@@ -111,10 +141,16 @@ const entrepreneurshipMeetup = {
   location: "Online Event",
   eventType: "Online",
   description:
-    "An interactive session for aspiring entrepreneurs to network, share ideas, and learn from successful startup founders.",
+    "An interactive networking meetup for aspiring entrepreneurs focusing on startup ideation, funding knowledge, pitch preparation, and real-world growth stories from seasoned founders.",
   speakers: [
-    "Karan Malhotra (Startup Mentor)",
-    "Lisa Nguyen (Investor & Advisor)",
+    {
+      name: "Karan Malhotra (Startup Mentor)",
+      image: "https://randomuser.me/api/portraits/men/14.jpg",
+    },
+    {
+      name: "Lisa Nguyen (Investor & Advisor)",
+      image: "https://randomuser.me/api/portraits/women/56.jpg",
+    },
   ],
   price: 10,
   min: 0,
@@ -134,8 +170,17 @@ const dataScienceWebinar = {
   location: "Online (Zoom Webinar)",
   eventType: "Online",
   description:
-    "A session covering the essentials of data visualization, predictive analytics, and the future of AI in decision-making.",
-  speakers: ["Neha Patel (Data Scientist)", "Robert Hughes (AI Researcher)"],
+    "A deep explanation of predictive analytics, machine learning workflow, model evaluation, best practices for data visualization, and the future of AI decision-making in industries.",
+  speakers: [
+    {
+      name: "Neha Patel (Data Scientist)",
+      image: "https://randomuser.me/api/portraits/women/41.jpg",
+    },
+    {
+      name: "Robert Hughes (AI Researcher)",
+      image: "https://randomuser.me/api/portraits/men/42.jpg",
+    },
+  ],
   price: 0,
   min: 0,
   dressCode: "Other",
@@ -154,10 +199,16 @@ const photographyMeetup = {
   location: "Marine Drive, Mumbai",
   eventType: "Offline",
   description:
-    "Join fellow photographers for a city photo walk and sharing session to improve your street photography and composition skills.",
+    "A photography walk featuring composition techniques, lighting knowledge, street photography tips, and real-time guidance from professional photographers. Perfect for beginners and intermediate photographers.",
   speakers: [
-    "Arjun Menon (Professional Photographer)",
-    "Sarah White (Travel Blogger)",
+    {
+      name: "Arjun Menon (Professional Photographer)",
+      image: "https://randomuser.me/api/portraits/men/69.jpg",
+    },
+    {
+      name: "Sarah White (Travel Blogger)",
+      image: "https://randomuser.me/api/portraits/women/52.jpg",
+    },
   ],
   price: 5,
   min: 0,
@@ -179,13 +230,13 @@ async function createMeetups(data) {
   }
 }
 
-createMeetups(webDevelopment);
-createMeetups(techConference);
-createMeetups(designWorkshop);
-createMeetups(marketingSeminar);
-createMeetups(entrepreneurshipMeetup);
-createMeetups(dataScienceWebinar);
-createMeetups(photographyMeetup);
+// createMeetups(webDevelopment);
+// createMeetups(techConference);
+// createMeetups(designWorkshop);
+// createMeetups(marketingSeminar);
+// createMeetups(entrepreneurshipMeetup);
+// createMeetups(dataScienceWebinar);
+// createMeetups(photographyMeetup);
 
 async function readAllEvents() {
   try {
